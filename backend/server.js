@@ -17,8 +17,8 @@ app.use(express.json());
 app.use(cors());
 
 // intializing routes
-app.use('/api/songs', songRouter);
-app.use('/api/albums', albumRouter);
+app.use('/api/song', songRouter);
+app.use('/api/album', albumRouter);
 
 app.get("/", (req, res) => res.send("Api Working"));
 
