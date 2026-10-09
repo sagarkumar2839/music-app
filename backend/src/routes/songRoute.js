@@ -6,6 +6,6 @@ const songRouter = express.Router();
 
 songRouter.post('/add',upload.fields([{ name: 'image', maxCount: 1 },{name:'audio',maxCount: 1}]), addSong);
 songRouter.get('/list', listSongs);
-songRouter.delete('/remove', removeSong);
+songRouter.post('/remove', removeSong);
 
 export default songRouter;
